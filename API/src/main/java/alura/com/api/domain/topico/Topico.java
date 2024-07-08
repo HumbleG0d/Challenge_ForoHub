@@ -39,4 +39,13 @@ public class Topico {
     this.usuario = new Usuario(datosTopicoDTO.usuario());
     this.curso = new Curso(datosTopicoDTO.curso());
   }
+
+  public void actualizarTopico(DatosActualizarTopicoDTO datosActualizarTopicoDTO){
+    if(datosActualizarTopicoDTO.mensaje() != null){
+      this.mensaje = datosActualizarTopicoDTO.mensaje();
+    }
+    if(datosActualizarTopicoDTO.status() != null){
+    this.status = Status.valueOf(datosActualizarTopicoDTO.status());
+    }
+  }
 }
