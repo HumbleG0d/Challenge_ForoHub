@@ -1,2 +1,9 @@
-package alura.com.api.repository;public interface CursoRepository {
+package alura.com.api.repository;
+
+import alura.com.api.domain.curso.Curso;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CursoRepository extends JpaRepository<Curso, Long> {
 }
