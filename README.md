@@ -1,6 +1,8 @@
 # Challenge_ForoHub
 Desafío numero 3 de la ruta backend ONE - Oracle Next Education. Este desafío consiste en crear una API Rest para un foro.
 
+![](https://github.com/HumbleG0d/Challenge_ForoHub/blob/main/API/src/main/java/alura/com/api/asstes/Badge-Spring.png)
+
 ## Descripción
 
 Un foro es un espacio donde todos los participantes de una plataforma pueden plantear sus preguntas sobre determinados tópicos. Aquí en Alura Latam, los estudiantes utilizan el foro para resolver sus dudas sobre los cursos y proyectos en los que participan. Este lugar mágico está lleno de mucho aprendizaje y colaboración entre estudiantes, profesores y moderadores.
