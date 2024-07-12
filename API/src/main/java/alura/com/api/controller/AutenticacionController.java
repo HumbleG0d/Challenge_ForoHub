@@ -2,7 +2,7 @@ package alura.com.api.controller;
 
 import alura.com.api.domain.usuario.DatosUsuarioAutenticadoDTO;
 import alura.com.api.domain.usuario.Usuario;
-import alura.com.api.infra.security.DatosJWTO;
+import alura.com.api.infra.security.DatosDTOJWT;
 import alura.com.api.services.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class AutenticacionController {
     try {
       Authentication UsuarioAuthentication = authenticationManager.authenticate(authenticationToken);
       var jwtToken = tokenService.generarToken((Usuario)UsuarioAuthentication.getPrincipal());
-      return ResponseEntity.ok(new DatosJWTO(jwtToken));
+      return ResponseEntity.ok(new DatosDTOJWT(jwtToken));
     } catch (AuthenticationException e) {
       return ResponseEntity.status(401).body("Error: " + e.getMessage());
     }
