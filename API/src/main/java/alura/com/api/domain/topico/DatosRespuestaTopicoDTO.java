@@ -9,10 +9,9 @@ public record DatosRespuestaTopicoDTO(
         String mensaje,
         String fecha_creacion,
         String status,
-        Usuario usuario,
         Curso curso
 ) {
   public DatosRespuestaTopicoDTO(Topico topico) {
-    this(topico.getId(),topico.getTitulo(),topico.getMensaje() ,topico.getFecha_creacion().toString() , topico.getStatus().toString() , topico.getUsuario() ,topico.getCurso());
+    this(topico.getId(),topico.getTitulo(),topico.getMensaje() ,topico.getFecha_creacion().toString() , topico.getStatus().toString() ,topico.getCurso());
   }
 }
